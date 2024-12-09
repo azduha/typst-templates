@@ -64,13 +64,13 @@
 ), dy: 38%)
 
 #place(top + right, {
-  if (data.at("rok-tabora", default: 0) + data.at("prihlaska_id", default: 0) > 0) {
+  if (data.at("rok_tabora", default: 0) + data.at("prihlaska_id", default: 0) > 0) {
     // Pad prihlaska_id to 2 digits
     let id = str(data.at("prihlaska_id"))
     while (id.len() < 2) {
       id = "0" + id
     }
-    text("ID-" + str(data.at("rok-tabora")) + "-" + id, weight: "bold", fill: fillColor)
+    text("ID-" + str(data.at("rok_tabora")) + "-" + id, weight: "bold", fill: fillColor)
   }
 }, dx: 0.5cm, dy: 1.6cm)
 
