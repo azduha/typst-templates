@@ -64,7 +64,7 @@
 ), dy: 38%)
 
 #place(top + right, {
-  if (data.at("rok_tabora", default: 0) + data.at("prihlaska_id", default: 0) > 0) {
+  if (int(data.at("rok_tabora", default: "0000")) * (data.at("prihlaska_id", default: -1) + 1) > 0) {
     // Pad prihlaska_id to 2 digits
     let id = str(data.at("prihlaska_id"))
     while (id.len() < 2) {
