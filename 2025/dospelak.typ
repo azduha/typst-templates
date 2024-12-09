@@ -1,6 +1,6 @@
-#import "template.typ": *
+#import "../template.typ": *
 
-#let data = json.decode("{}")
+#let data = json.decode(sys.inputs.at("data", default: "{}"))
 
 #show: duha.with(
   title:"Závazná přihláška dospěláka",
@@ -48,11 +48,6 @@
   
   #field("Funkce na táboře:", content: optional(data, "funkce"))
   
-  #options("Vlastním platný potravinářský průkaz?", options: (
-    "ANO": 90%,
-    "NE": 100%
-  ), selected: ("NE", "ANO", "").at(data.at("potravinak", default: 2)))
-  
   #options("Mám platný kurz zdravotníka podle vyhlášky 106/2001 Sb.", options: (
     "ANO": 90%,
     "NE": 100%
@@ -62,6 +57,12 @@
     "ANO": 90%,
     "NE": 100%
   ), selected: ("NE", "ANO", "").at(data.at("kurz_hvt", default: 2)))
+
+  #options("Vlastním řidičský průkaz?", options: (
+    "ANO, ale nechci řídit": 80%,
+    "ANO": 90%,
+    "NE": 100%
+  ), selected: ("NE", "ANO", "ANO, ale nechci řídit", "").at(data.at("ridicsky_prukaz", default: 3)))
 ])
 
 #v(1em)
@@ -135,7 +136,7 @@ Další ujednání:	V rámci plnění svých povinností se bude dobrovolník po
 
 #heading("B. Povinnosti organizace", level: 2)
 
-1. Duha AZ odpovídá za zajištění podmínek pro práci dobrovolníka \ v táboře v míře, která je požadována zejména vyhláškou č. 106/2001 Sb. O hygienických požadavcích na zotavovací akce pro děti.
+1. Duha AZ odpovídá za zajištění podmínek pro práci dobrovolníka \ v táboře v míře, která je požadována zejména vyhláškou č. 106/2001 Sb. \ O hygienických požadavcích na zotavovací akce pro děti.
 2. Duha AZ poskytne dle svých možností dobrovolníkovi prostředky nezbytné k vykonávání sjednané činnosti a adekvátní prostor pro odpočinek a osobní volno.
 3. Duha AZ uhradí za dobrovolníka stravu a ubytování. Případné další nároky na úhradu nákladů spojených s prací dobrovolníka je nutné předem konzultovat s Duhou AZ.
 4. Duha AZ seznámí před uzavřením dohody dobrovolníka s jeho právy a povinnostmi z ní vyplývajících, s vnitřními předpisy tábora, zdravotními a bezpečnostními předpisy a zásadami poskytování první pomoci.

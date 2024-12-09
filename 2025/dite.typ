@@ -1,6 +1,6 @@
-#import "template.typ": *
+#import "../template.typ": *
 
-#let data = json.decode("{}")
+#let data = json.decode(sys.inputs.at("data", default: "{}"))
 
 #show: duha.with(
   title:"Závazná přihláška dítěte",
@@ -22,7 +22,7 @@
     táborová základna Údolí Slunce poblíž Železných Horek
   ],
   "Termín:": [
-    30. 6. 2024 - 13. 7. 2024
+    \30. 6. 2024 - 13. 7. 2024
   ],
   "Cena tábora:": [
     4 100 Kč pro členy Duhy AZ, 4 500 Kč pro nečleny Duhy AZ
@@ -113,7 +113,7 @@
   Kontakt na zákonného zástupce dosažitelného v době konánı́ tábora:
   
   #field("Jméno:", to: 40%, content: optional(data, "kontakt_jmeno"))
-  #field("Telefon:", to: 70%, content: format-phone(optional(data, "kontakt_telefon")))
+  #field("Telefon:", to: 64%, content: format-phone(optional(data, "kontakt_telefon")))
   #field("Poznámka:")
 
   #heading("Ujednání")
@@ -174,7 +174,7 @@
       #h(20%)
       b) nenı́ zdravotně způsobilé
       #v(-0.3em)
-      #field("c) je zdravotně způsobilé s omezenı́m:", to: 100%)
+      #field("c) je zdravotně způsobilé s omezenı́m:")
       #v(0.3em)
       #par(text(size: 0.9em, [
         #super("1") Nehodící se škrtněte

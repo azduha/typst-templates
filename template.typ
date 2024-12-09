@@ -25,26 +25,26 @@
     }
   }
 
-  // Set link style
+  // Set styles
   show link: it => underline(text(fill: rgb("#114499"), it))
-
-  // no pagebreak before heading
   show heading.where(level:1): it => it + v(0.5em)
+  set list(marker: ("●", "o", "o", "o"), body-indent: 1em, indent: 1em)
 
   set page(
     margin: (
       top: 2cm,
-      bottom: 2cm,
+      bottom: 1.5cm,
       left: 2.4cm,
-      right: 2cm
+      right: 1.8cm
     ),
+    paper: "a4",
     header: [
       #place(top + left, dx: -2.4cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#f80304")))
       #place(top + left, dx: -2.2cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#f1d405")))
       #place(top + left, dx: -2.0cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#67a601")))
       #place(top + left, dx: -1.8cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#0c5e73")))
-      #place(top + right, dx: 0.8cm, dy: 1.4cm, image(width: 4cm, height: 1.5cm, fit: "stretch", "media/logo.png"))
-    ]
+      #place(top + right, dx: 0.8cm, dy: 1.4cm, image(width: 4cm, height: 1.5cm, fit: "stretch", "logo.png"))
+    ],
   )
 
   set par(justify: false)
@@ -70,6 +70,8 @@
   if (lastLineTo < 0% or lastLineTo > to) {
     lastLineTo = to
   }
+
+  text("")
   
   context {    
     let x = here().position().x
@@ -234,12 +236,12 @@
   content
 }
 
-#let credentials(fields: ()) = {
+#let credentials(fields: (), width: 30%, spacing: 1em) = {
   table(
-    columns: (30%, auto),
+    columns: (width, auto),
     align: top,
     inset: 0pt,
-    row-gutter: 1em,
+    row-gutter: spacing,
     stroke: none,
     ..fields.pairs().map(pair => (text(upper(pair.at(0)), weight: "bold"), pair.at(1))).flatten()
   )
