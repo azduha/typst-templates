@@ -101,7 +101,7 @@
   
   #field("Stan by chtěl(a) sdı́let s:", to: 74%, content: optional(data, "stan"))  
 
-  #field("Je nějaké jı́dlo, jež odmı́tá jı́st:", to: 74%, content: optional(data, "jidlo"))  
+  #field("Je nějaké jídlo, které nemůže jíst:", to: 74%, content: optional(data, "jidlo"))  
 
   #field("Dalšı́ důležitá (např. zdravotnı́) sdělenı́:", to: 74%, lines: 1, content: optional(data, "oznameni"))
   
