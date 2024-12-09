@@ -70,9 +70,9 @@
     while (id.len() < 2) {
       id = "0" + id
     }
-    text("ID-" + str(data.at("rok_tabora")) + "-" + id, weight: "bold", fill: fillColor)
+    text("ID-" + str(data.at("rok-tabora")) + "-" + id, weight: "bold", fill: fillColor)
   }
-}, dx: 0.8cm, dy: 1.6cm)
+}, dx: 0.5cm, dy: 1.6cm)
 
 #form([ 
   #heading("Základní údaje o účastníkovi")
