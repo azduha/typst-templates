@@ -63,6 +63,12 @@
   ),
 ), dy: 38%)
 
+#place(top + right, {
+  if (data.at("rok-tabora", default: 0) + data.at("prihlaska_id", default: 0) > 0) {
+    text("ID-" + str(data.at("rok_tabora")) + "-" + str(data.at("prihlaska_id")), weight: "bold", fill: fillColor)
+  }
+}, dx: 0.8cm, dy: 1.6cm)
+
 #form([ 
   #heading("Základní údaje o účastníkovi")
   #field("Jméno a příjmení:", to: 55%, content: optional(data, "jmeno") + " " + optional(data, "prijmeni"))
