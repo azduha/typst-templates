@@ -77,7 +77,7 @@
   #field("Bydliště:", to: 60%, content: optional(data, "bydliste"))
   #field("Škola:", content: optional(data, "skola"))
   
-  #field("Rodné číslo:", to: 35%, content: optional(data, "datum_narozeni"))
+  #field("Datum narození:", to: 35%, content: format-datetime(optional(data, "datum_narozeni")))
   #field("Zdravotní pojišťovna:", to: 75%, content: optional(data, "zp"))
   #field("Třída:", content: optional(data, "trida"))
   
@@ -152,8 +152,8 @@
   
   #heading("1. Identifikační údaje")
   
-  #field("Jméno a příjmení posuzovaného dítěte:", to: 75%, content: optional(data, "jmeno") + " " + optional(data, "prijmeni"))
-  #field("RČ:", content: optional(data, "datum_narozeni"))
+  #field("Jméno a příjmení posuzovaného dítěte:", to: 70%, content: optional(data, "jmeno") + " " + optional(data, "prijmeni"))
+  #field("Narození:", content: format-datetime(optional(data, "datum_narozeni")))
   
   #field("Adresa mı́sta trvalého pobytu nebo jiného bydliště na územı́ ČR posuzovaného dı́těte:", newline: true, content: optional(data, "bydliste"))
   
