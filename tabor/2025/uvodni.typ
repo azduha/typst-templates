@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "../../template.typ": *
 
 #let data = json.decode(sys.inputs.at("data", default: "{}"))
 
