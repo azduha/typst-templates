@@ -158,7 +158,7 @@
   #heading("1. Identifikační údaje")
   
   #field("Jméno a příjmení posuzovaného dítěte:", to: 70%, content: optional(data, "jmeno") + " " + optional(data, "prijmeni"))
-  #field("Narození:", content: format-datetime(optional(data, "datum_narozeni")))
+  #field("Narozen(a):", content: format-datetime(optional(data, "datum_narozeni")))
   
   #field("Adresa mı́sta trvalého pobytu nebo jiného bydliště na územı́ ČR posuzovaného dı́těte:", newline: true, content: optional(data, "bydliste"))
   
