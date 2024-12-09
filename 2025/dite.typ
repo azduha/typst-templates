@@ -34,8 +34,7 @@
 #let imagecontent = {
   if (type(optional(data, "fotka")) == str and optional(data, "fotka").len() > 0) {
     // Cannot place image from online, this is for now
-    place(line(start: (0%, 0%), end: (100%, 100%), stroke:(thickness: lineThickness, paint: fillColor)))
-    place(line(start: (100%, 0%), end: (0%, 100%), stroke:(thickness: lineThickness, paint: fillColor)))
+    image(width: 100.1%, height: 100.1%, fit: "cover", optional(data, "fotka"))
   } else {
     [
       Fotografie dı́těte
