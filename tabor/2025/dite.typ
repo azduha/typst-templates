@@ -103,7 +103,7 @@
 
   #field("Je nějaké jídlo, které nemůže jíst:", to: 74%, content: optional(data, "jidlo"))  
 
-  #field("Dalšı́ důležitá (např. zdravotnı́) sdělenı́:", to: 74%, lines: 1, content: optional(data, "oznameni"))
+  #field("Dalšı́ důležitá (např. zdravotnı́) sdělenı́:", to: 74%, lines: 2, content: optional(data, "oznameni"))
   
   #heading("Kontaktní údaje")
   Kontakt s rodiči pro komunikaci v obdobı́ před táborem (vyplň te alespoň jeden řádek):

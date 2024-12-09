@@ -32,7 +32,7 @@
 
   set page(
     margin: (
-      top: 2cm,
+      top: 1.5cm,
       bottom: 1.5cm,
       left: 2.4cm,
       right: 1.8cm
@@ -43,7 +43,7 @@
       #place(top + left, dx: -2.2cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#f1d405")))
       #place(top + left, dx: -2.0cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#67a601")))
       #place(top + left, dx: -1.8cm, dy: 0cm, rect(width: 0.2cm, height: 297mm, fill: rgb("#0c5e73")))
-      #place(top + right, dx: 0.8cm, dy: 1.4cm, image(width: 4cm, height: 1.5cm, fit: "stretch", "media/logo.png"))
+      #place(top + right, dx: 0.8cm, dy: 1.1cm, image(width: 4cm, height: 1.5cm, fit: "stretch", "media/logo.png"))
     ],
   )
 
