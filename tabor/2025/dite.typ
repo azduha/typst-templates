@@ -1,4 +1,5 @@
 #import "../../template.typ": *
+#import "./_data.typ": *
 
 #let data = json.decode(sys.inputs.at("data", default: "{}"))
 
@@ -21,12 +22,8 @@
   "Místo:": [
     táborová základna Údolí Slunce poblíž Železných Horek
   ],
-  "Termín:": [
-    \30. 6. 2024 - 13. 7. 2024
-  ],
-  "Cena tábora:": [
-    4 100 Kč pro členy Duhy AZ, 4 500 Kč pro nečleny Duhy AZ
-  ]
+  "Termín:": tabor.at("od") + " - " + tabor.at("do"),
+  "Cena tábora:": tabor.at("cena"),
 ))
 
 #v(0.3em)
@@ -128,7 +125,7 @@
 
   #heading("Ujednání")
   #text([
-    Souhlası́m, aby se naše dı́tě zúčastnilo letnı́ho tábora organizace Duha AZ od 30. 6. do 13. 7. 2024.
+    Souhlası́m, aby se naše dı́tě zúčastnilo letnı́ho tábora organizace Duha AZ od #tabor.at("od") do #tabor.at("do").
     Zároveň souhlası́m s převzetı́m odpovědnosti za přı́padné škody způsobené dı́tětem.
     
     Udı́lı́m souhlas k tomu, aby vedenı́ tábora shromažďovalo, zpracovávalo a archivovalo uvedené osobnı́ údaje pro potřeby

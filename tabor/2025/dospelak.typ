@@ -1,4 +1,5 @@
 #import "../../template.typ": *
+#import "./_data.typ": *
 
 #let data = json.decode(sys.inputs.at("data", default: "{}"))
 
@@ -19,9 +20,7 @@
   "Místo:": [
     táborová základna Údolí Slunce poblíž Železných Horek
   ],
-  "Termín:": [
-    30. 6. 2024 - 13. 7. 2024
-  ]
+  "Termín:": tabor.at("od") + " - " + tabor.at("do"),
 ))
 
 #v(1em)
@@ -95,7 +94,7 @@ Jsem si vědom/vědoma právních i finančních důsledků, které by pro mne v
 #v(1em)
 
 #heading("I. Smluvní strany")
-Duha AZ, 1. máje 325/1, 591 01 Žďár nad Sázavou, IČO 670 24 629, zastoupená Michalem Freiwaldem, hlavním vedoucím tábora, rodné číslo 951210/5240, bytem Bohdalov 318, 592 13, Bohdalov
+Duha AZ, 1. máje 325/1, 591 01 Žďár nad Sázavou, IČO 670 24 629, zastoupená Jonášem Roseckým, hlavním vedoucím tábora, rodné číslo 990124/5222, bytem Luční 1151/8, Žďár nad Sázavou, 591 01
 (dále jen Duha AZ) a
 
 #field("", to: 50%, content: optional(data, "jmeno") + " " + optional(data, "prijmeni"))
@@ -150,7 +149,7 @@ Další ujednání:	V rámci plnění svých povinností se bude dobrovolník po
 1. Nestanoví-li tato dohoda jinak, řídí se právní vztahy z ní vyplývající Občanským zákoníkem.
 2. Tato dohoda může být měněna a doplňována pouze se souhlasem obou smluvních stran písemnými dodatky.
 3. Smlouva je sepsána ve dvou vyhotoveních, z nichž každá strana obdrží jednu kopii.
-4. Tato dohoda se uzavírá na dobu určitou do 13. července 2024 včetně. Z důvodů zachování kontinuity programů Duhy AZ je tato smlouva pro obě smluvní strany vázána minimálně 14-ti denní výpovědní lhůtou. Toto ustanovení neruší právo hlavního vedoucího tábora odvolat v odůvodněných případech dobrovolníka z tábora (např. při svévolném porušení povinností dobrovolníka nebo nedodržení podmínek této smlouvy nebo pokud další pobyt není možný např. z výchovných důvodů).
+4. Tato dohoda se uzavírá na dobu určitou do #tabor.at("do") včetně. Z důvodů zachování kontinuity programů Duhy AZ je tato smlouva pro obě smluvní strany vázána minimálně 14-ti denní výpovědní lhůtou. Toto ustanovení neruší právo hlavního vedoucího tábora odvolat v odůvodněných případech dobrovolníka z tábora (např. při svévolném porušení povinností dobrovolníka nebo nedodržení podmínek této smlouvy nebo pokud další pobyt není možný např. z výchovných důvodů).
 5. Dobrovolník může tuto dohodu zrušit, pokud nemůže svěřenou funkci a činnosti spojené s ní vykonávat např. ze zdravotních důvodů nebo jiných závažných příčin, a to písemně nebo po vzájemné dohodě.
 6. Tato smlouva nabývá účinnosti dnem podpisu.
 
