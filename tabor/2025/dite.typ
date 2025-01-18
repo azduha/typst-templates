@@ -103,13 +103,13 @@
   #field("Dalšı́ důležitá (např. zdravotnı́) sdělenı́:", to: 74%, lines: 2, content: optional(data, "oznameni"))
   
   #heading("Kontaktní údaje")
-  Kontakt s rodiči pro komunikaci v obdobı́ před táborem (vyplň te alespoň jeden řádek):
+  Kontakt na zákonné zástupce pro komunikaci v obdobı́ před táborem (vyplňte alespoň jeden řádek):
   
-  #field("Jméno matky:", to: 40%, content: optional(data, "jmeno_matky"))
+  #field("Jméno:", to: 40%, content: optional(data, "jmeno_matky"))
   #field("Telefon:", to: 64%, content: format-phone(optional(data, "telefon_matky")))
   #field("Email:", content: optional(data, "email_matky"))
 
-  #field("Jméno otce:", to: 40%, content: optional(data, "jmeno_otce"))
+  #field("Jméno:", to: 40%, content: optional(data, "jmeno_otce"))
   #field("Telefon:", to: 64%, content: format-phone(optional(data, "telefon_otce")))
   #field("Email:", content: optional(data, "email_otce"))
 
