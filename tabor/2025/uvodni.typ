@@ -20,9 +20,9 @@ Určen je pro *děti a mládež ve věku 7-16 let*.
 
 Pokud jste se rozhodli přihlásit své dítě na tábor, vyplňte *všechna* povinná pole v *Závazné přihlášce* na stránce #link("https://azduha.cz/tabor/"+tabor.at("rok")+"/prihlasky"), po kliknutí na tlačítko generovat se Vám stáhne předvyplněná přihláška na letošní tábor. Tato přihláška Vám společně s dalšími informacemi přijde i na všechny *uvedené kontaktní emaily*. Dále je nutné navštívit dětského či praktického lékaře, který potvrdí absolvování povinných očkování a posoudí, zda je dítě zdravotně způsobilé a může se tak tábora zúčastnit. Závaznou přihlášku (včetně části týkající se zdravotního stavu dítěte) poté potvrďte coby zákonný zástupce svým podpisem.
 
-Z důvodu hromadného pojištění je třeba, aby všichni účastníci tábora byli členy Duhy AZ. Pokud Vaše dítě v současné době není členem, vyplňte také *Přihlášku do dětské organizace Duha AZ*, která Vám přijde společně s přihláškou na tábor emailem. Tuto přihlášku, prosím, také odevzdejte společně se Závaznou přihláškou na tábor. Kvůli nutné administrativě je cena tábora pro nečleny Duhy AZ zvýšena.
+Z důvodu hromadného pojištění je třeba, aby všichni účastníci tábora byli členy Duhy AZ. Pokud Vaše dítě v současné době není členem, vyplňte také *Přihlášku do dětské organizace Duha AZ*, která Vám přijde společně s přihláškou na tábor emailem. Tuto přihlášku, prosím, také odevzdejte společně se Závaznou přihláškou na tábor. Budete poté vyzváni k zaplacení členského příspěvku do Duhy AZ, jehož uhrazení Vás opravňuje účastnit se celoroční činnosti oddílu.
 
-Přihlášku (přihlášky) poté zašlete na adresu organizátora tábora - *Luční 1151/8, Žďár nad Sázavou, 591 01*, případně ji předejte na pravidelných schůzkách vedoucímu. Přihlášku je třeba odevzdat *do neděle 13. 4. 2025* (pokud není s hlavním vedoucím dohodnuto jinak). Kapacita tábora je omezená, proto budou upřednostňovány dříve odevzdané přihlášky a do neděle 16.3. budou mít prioritu přihlášky stálých členů Duhy AZ. Hlavní vedoucí tábora si také vyhrazuje právo v odůvodněných případech přihlášky odmítnout.
+Přihlášku (přihlášky) poté zašlete na adresu organizátora tábora - *Luční 1151/8, Žďár nad Sázavou, 591 01*, případně ji předejte na pravidelných schůzkách vedoucímu. Přihlášku je třeba odevzdat *do neděle 13. 4. 2025* (pokud není s hlavním vedoucím dohodnuto jinak). Kapacita tábora je omezená, proto budou upřednostňovány dříve odevzdané přihlášky a do neděle 16. 3. 2025 budou mít prioritu přihlášky stálých členů Duhy AZ. Hlavní vedoucí tábora si také vyhrazuje právo v odůvodněných případech přihlášky odmítnout.
 
 #v(1em)
 
@@ -47,9 +47,9 @@ Stornovat pobyt lze nejpozději měsíc před táborem, tedy *20. 6. 2025* (tele
 
 #credentials(width: 25%, fields: (
   "Cena tábora:": [
-    4 200 Kč členové Duhy AZ \
-    4 600 Kč nečlenové Duhy AZ \
-    2 000 Kč 3. dítě v rodině (člen Duhy AZ)
+    *4 200 Kč* - členové Duhy AZ \
+    *4 200 Kč + 400 Kč členský příspěvek* - nečlenové Duhy AZ \
+    *2 000 Kč* - 3. dítě v rodině (člen Duhy AZ)
   ]
 ))
 
@@ -92,7 +92,7 @@ _Určen pro kluky i holky ve věku 7–16 let_
   ],
 
   "POPLATEK:":	[
-    *4 200 Kč* členové Duhy AZ; *4 600 Kč* nečlenové Duhy AZ \ (před podpisem Závazné přihlášky); *2 000 Kč* 3. dítě v rodině (člen)
+    *4 200 Kč* (*+ 400 Kč* členský příspěvek Duhy AZ) \ *2 000 Kč* 3. dítě v rodině (člen)
   ],
   
   "PŘIHLÁŠKY:": [
