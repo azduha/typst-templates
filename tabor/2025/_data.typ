@@ -1,6 +1,7 @@
 // Používá se pro přihlášky; organizační a úvodní informace je potřeba aktualizovat zvlášť
 
 #let tabor = (
+  "rok": "2025",
   "od": "20. 7. 2025",
   "do": "2. 8. 2025",
   "hvt": (

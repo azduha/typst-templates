@@ -1,4 +1,5 @@
 #import "../../template.typ": *
+#import "./_data.typ": *
 
 #let data = json.decode(sys.inputs.at("data", default: "{}"))
 
@@ -13,22 +14,22 @@
 
 Vážení rodiče, milé děti!
 
-Právě jste obdrželi první informační balík na letní tábor, který pořádá dětská organizace Duha Alternativní zóna, Žďár nad Sázavou (dále jen Duha AZ). Tábor se koná od neděle *30. 6. 2024* do soboty *13. 7. 2024* na základně Údolí Slunce poblíž Železných Horek u Přibyslavi. 
+Právě jste obdrželi první informační balík na letní tábor, který pořádá dětská organizace Duha Alternativní zóna, Žďár nad Sázavou (dále jen Duha AZ). Tábor se koná od neděle *#tabor.at("od")* do soboty *#tabor.at("do")* na základně Údolí Slunce poblíž Železných Horek u Přibyslavi. 
 
 Určen je pro *děti a mládež ve věku 7-16 let*.
 
-Pokud jste se rozhodli přihlásit své dítě na tábor, vyplňte *všechna* povinná pole v *Závazné přihlášce* na stránce https://azduha.cz/tabor/2024/prihlasky, po kliknutí na tlačítko generovat se Vám stáhne předvyplněná přihláška na letošní tábor. Tato přihláška Vám společně s dalšími informacemi přijde i na všechny *uvedené kontaktní emaily*. Dále je nutné navštívit dětského či praktického lékaře, který potvrdí absolvování povinných očkování a posoudí, zda je dítě zdravotně způsobilé a může se tak tábora zúčastnit. Závaznou přihlášku (včetně části týkající se zdravotního stavu dítěte) poté potvrďte coby zákonný zástupce svým podpisem.
+Pokud jste se rozhodli přihlásit své dítě na tábor, vyplňte *všechna* povinná pole v *Závazné přihlášce* na stránce #link("https://azduha.cz/tabor/"+tabor.at("rok")+"/prihlasky"), po kliknutí na tlačítko generovat se Vám stáhne předvyplněná přihláška na letošní tábor. Tato přihláška Vám společně s dalšími informacemi přijde i na všechny *uvedené kontaktní emaily*. Dále je nutné navštívit dětského či praktického lékaře, který potvrdí absolvování povinných očkování a posoudí, zda je dítě zdravotně způsobilé a může se tak tábora zúčastnit. Závaznou přihlášku (včetně části týkající se zdravotního stavu dítěte) poté potvrďte coby zákonný zástupce svým podpisem.
 
 Z důvodu hromadného pojištění je třeba, aby všichni účastníci tábora byli členy Duhy AZ. Pokud Vaše dítě v současné době není členem, vyplňte také *Přihlášku do dětské organizace Duha AZ*, která Vám přijde společně s přihláškou na tábor emailem. Tuto přihlášku, prosím, také odevzdejte společně se Závaznou přihláškou na tábor. Kvůli nutné administrativě je cena tábora pro nečleny Duhy AZ zvýšena.
 
-Přihlášku (přihlášky) poté zašlete na adresu organizátora tábora - rodina Zlesákova, *Barvířská 2597/6, 591 01 Žďár nad Sázavou*, případně ji předejte na pravidelných schůzkách vedoucímu. Přihlášku je třeba odevzdat *do neděle 14. 4. 2024* (pokud není s hlavním vedoucím dohodnuto jinak). Kapacita tábora je omezená, proto budou upřednostňovány dříve odevzdané přihlášky a přihlášky stálých členů Duhy AZ. Hlavní vedoucí tábora si také vyhrazuje právo v odůvodněných případech přihlášky odmítnout.
+Přihlášku (přihlášky) poté zašlete na adresu organizátora tábora - *Luční 1151/8, Žďár nad Sázavou, 591 01*, případně ji předejte na pravidelných schůzkách vedoucímu. Přihlášku je třeba odevzdat *do neděle 13. 4. 2025* (pokud není s hlavním vedoucím dohodnuto jinak). Kapacita tábora je omezená, proto budou upřednostňovány dříve odevzdané přihlášky a do neděle 16.3. budou mít prioritu přihlášky stálých členů Duhy AZ. Hlavní vedoucí tábora si také vyhrazuje právo v odůvodněných případech přihlášky odmítnout.
 
 #v(1em)
 
 #align(right, [
   Za táborové vedení \
-  Michal „Mini“ Freiwald, hlavní vedoucí tábora \
-  +420 775 244 262 \
+  Jonáš "Sony" Rosecký, hlavní vedoucí tábora \
+  +420 730 585 427 \
   tabor\@azduha.cz
 ])
 
@@ -38,16 +39,16 @@ Přihlášku (přihlášky) poté zašlete na adresu organizátora tábora - rod
 
 #title("Placení tábora")
 
-Po odevzdání přihlášky a zařazení do seznamu účastníků Vám hospodář zašle e-mailem na Vaši kontaktní adresu variabilní symbol, který je nutný uvést při platbě tábora. Tu uhraďte nejpozději *do neděle 19. 5. 2024* (pokud není s hlavním vedoucím dohodnuto jinak). Po uhrazení poplatku za tábor bude Vaše přihlášení považováno za závazné.
+Po odevzdání přihlášky a zařazení do seznamu účastníků Vám hospodář zašle e-mailem na Vaši kontaktní adresu variabilní symbol, který je nutný uvést při platbě tábora. Prosíme neplaťte tábor před tímto informačním emailem. Po uhrazení poplatku za tábor bude Vaše přihlášení považováno za závazné.
 
-Stornovat pobyt lze nejpozději do *2. 6. 2024* (telefonicky, e-mailem). Z důvodu nákupu společného jídla a materiálu v době před táborem je však možné vrátit pouze polovinu zaplacené částky. Při stornování pobytu po *2. 6. 2024* již bohužel není možné poplatek vrátit vůbec. *Jestliže bude organizátor tábora nucen tábor zrušit v důsledku protiepidemických opatření, vrací se 100 % uhrazené částky.*
+Stornovat pobyt lze nejpozději měsíc před táborem, tedy *20. 6. 2025* (telefonicky, e-mailem). Z důvodu nákupu společného jídla a materiálu v době před táborem je však možné vrátit pouze polovinu zaplacené částky. Při stornování pobytu po *20. 6. 2025* již bohužel není možné poplatek vrátit vůbec.
 
 #v(1em)
 
 #credentials(width: 25%, fields: (
   "Cena tábora:": [
-    4 100 Kč členové Duhy AZ \
-    4 500 Kč nečlenové Duhy AZ \
+    4 200 Kč členové Duhy AZ \
+    4 600 Kč nečlenové Duhy AZ \
     2 000 Kč 3. dítě v rodině (člen Duhy AZ)
   ]
 ))
@@ -55,8 +56,8 @@ Stornovat pobyt lze nejpozději do *2. 6. 2024* (telefonicky, e-mailem). Z důvo
 #heading("Způsoby placení:")
 
 -	*Převodem* na bankovní účet Duhy AZ: *2200972129/2010* (Fio banka)
-  -	Při platbě vyplňte *variabilní symbol* a do zprávy pro příjemce uveďte *jméno účastníka*
-  -	Chcete-li mít jistotu, že jsme Vaši platbu přijali, pošlete nám e-mail, že jste platbu zadali bance. Po přijetí platby (nejdéle do 3 pracovních dnů) vás budeme informovat.
+  -	Při platbě vyplňte *přidělený variabilní symbol* a do zprávy pro příjemce uveďte #"\n"*jméno účastníka*
+  -	Platby jsou automaticky ověřovány a jejich stav si můžete zobrazit na táborovém webu #"\n"v sekci #link("https://azduha.cz/tabor/"+tabor.at("rok")+"/index.php?page=ucastnici", "Účastníci")
 -	*Platbu provede zaměstnavatel* na základě *Žádosti o příspěvek zaměstnavatele*, případně na základě *faktury*
   -	oba dokumenty na požádání vystavíme
   -	prosíme opět o uvedení *variabilního symbolu*
@@ -73,15 +74,15 @@ V případě jakýchkoliv dotazů ohledně tábora se na nás neváhejte obráti
 
 #align(right, [
   Za táborové finance \
-  Jan „Honzys“ Stratil, hospodář Duhy AZ \
-  +420 777 047 087
+  Jakub "Kubula" Svoboda, hospodář tábora \
+  +420 774 976 512
   tabor\@azduha.cz
 ])
 
 
 #pagebreak()
 
-#title("Letní dětský tábor Duha AZ", subtitle: "neděle 30. 6. 2024 – sobota 13. 7. 2024")
+#title("Letní dětský tábor Duha AZ", subtitle: "neděle "+tabor.at("od")+" – sobota "+tabor.at("do"))
 #v(-1em)
 _Určen pro kluky i holky ve věku 7–16 let_
 #v(1em)
@@ -91,11 +92,11 @@ _Určen pro kluky i holky ve věku 7–16 let_
   ],
 
   "POPLATEK:":	[
-    *4 100 Kč* členové Duhy AZ; *4 500 Kč* nečlenové Duhy AZ \ (před podpisem Závazné přihlášky); *2 000 Kč* 3. dítě v rodině (člen)
+    *4 200 Kč* členové Duhy AZ; *4 600 Kč* nečlenové Duhy AZ \ (před podpisem Závazné přihlášky); *2 000 Kč* 3. dítě v rodině (člen)
   ],
   
   "PŘIHLÁŠKY:": [
-    doručte hlavnímu vedoucímu (osobně, poštou) nebo odevzdejte na duhových schůzkách *nejpozději do neděle 14. 4. 2024*
+    doručte hlavnímu vedoucímu (osobně, poštou) nebo odevzdejte na duhových schůzkách *nejpozději do neděle 13. 4. 2025*
   ],
   
   "PROGRAM:": [
@@ -116,16 +117,16 @@ _Určen pro kluky i holky ve věku 7–16 let_
   
   "VEDENÍ:":	[
     *Hlavní vedoucí:* \
-    Michal „Mini“ Freiwald \
-    Bohdalov 318, 592 13 Bohdalov \
-    +420 775 244 262
+    Jonáš „Sony“ Rosecký \
+    Luční 1151/8, Žďár nad Sázavou, 591 01 \
+    +420 730 585 427
     
     *Zástupce HV:* \
-    Jonáš „Sony“ Rosecký
+    Sára "Sára" Krabcová
     
     *Zdravotník:* \
-    Petr „Big“ Glajc \
-    David „Heri“ Novotný
+    Miroslav "Míra" Kadlec \
+    Denisa "Deni" Sáblíková
   ],
   	
   "ADRESA:":	[
@@ -147,11 +148,11 @@ _Určen pro kluky i holky ve věku 7–16 let_
   ],
   
   "SRAZ:":	[
-    sraz *v neděli 30. 6. 2024* dopoledne, místo bude upřesněno
+    sraz *v neděli #tabor.at("od")* dopoledne, místo bude upřesněno
   ],
   
   "UKONČENÍ:":	[
-    *v sobotu 13. 7. 2024* dopoledne (od 9:00 do 10:00)
+    *v sobotu #tabor.at("do")* dopoledne (od 9:00 do 10:00)
   ],
   
   "VYBAVENÍ:":	[
@@ -162,10 +163,10 @@ _Určen pro kluky i holky ve věku 7–16 let_
     novinky a aktualizace sledujte na táborovém webu, či na Facebooku Duhy AZ.
     S případnými dotazy se na nás můžete obracet buď emailem, nebo telefonicky
     #v(1em)
-  	*Web:*	https://azduha.cz/tabor/2024 \
+  	*Web:*	#link("https://azduha.cz/tabor/"+tabor.at("rok")+"/prihlasky") \
   	*Facebook:*	https://www.facebook.com/groups/246886215486106/ \
   	*Email:*	tabor\@azduha.cz \
-  	*Telefon:* 	+420 775 244 262
+  	*Telefon:* 	+420 730 585 427
  ]
 
 ))
