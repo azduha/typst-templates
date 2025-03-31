@@ -96,18 +96,18 @@
                 leading: 0.85em,
                 {
                   h((x - page.margin.left).length)
-                  text(".", size: 0pt)
                   text(str(content), size: fillSize, fill: fillColor)
                 }
               ),
               width: (page.width - page.margin.left - page.margin.right) * to,
-              height: 1.4em * lines - (1.4em - 0.8em),
-              clip: true
+              height: 1.45em * lines - (1.4em - 1em),
+              clip: true,
+              inset: (top: 0.2em),
             ),
-            inset: (top: -0.8em, left: -(x - page.margin.left).length),
+            inset: (top: -1em, left: -(x - page.margin.left).length),
             width: calc.max(((page.width - page.margin.left - page.margin.right) * to - (x - page.margin.left)).length.to-absolute(), 1em.to-absolute()),
             height: lineThickness,
-            fill: black
+            fill: black,
           )
         },
       )
