@@ -82,7 +82,7 @@
   #field("Podpis:")
 
 
-  #pagebreak()
+  #page({}, header: {}) // To be able to print double-sided
   #pagebreak()
   // #page([], header: [])
 
