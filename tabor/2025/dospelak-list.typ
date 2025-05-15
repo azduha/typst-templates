@@ -13,6 +13,7 @@
     "HVT": "Hlavní vedoucí tábora",
     "Zdravotník": "Zdravotník",
     "Hospodář": "Hospodář",
+    "Kuchyně": "Vedoucí, kuchař"
 )
 
 #let mapRole(funkce) = {
