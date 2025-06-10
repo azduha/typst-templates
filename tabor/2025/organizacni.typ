@@ -127,7 +127,7 @@ Věci zabalte *do nižšího* (cca 25 cm) kufru nebo do *krabice od banánů*, z
 -	Duhový zpěvník – najdete na #link("https://github.com/azduha/akordy/releases/latest/download/zpevnik.pdf")[azduha.cz]
 -	Zpěvníky Já, písnička
 -	hudební nástroj, tamburínky, chrastítka
--	pokud máte, herní karty z loňského tábor
+-	pokud máte, herní karty z loňského tábora
 ])
 
 #v(0.5em)
