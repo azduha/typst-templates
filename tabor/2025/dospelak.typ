@@ -156,6 +156,7 @@
 
     #field("Podpis dobrovolníka", to: 55%)
     #field(", za Duhu AZ ")
+    #place(image("podpis.png", height: 2cm,), dx: 100% - 4cm, dy: -1.8cm)
 
     #field("Dne", to: 40%, content: format-datetime(optional(data, "datum")))
     #field("v(e)", content: if optional(data, "jmeno").len() > 0 { "Žďáře nad Sázavou" })

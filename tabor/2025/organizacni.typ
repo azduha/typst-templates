@@ -63,8 +63,7 @@ V průběhu tábora budeme mít dostupné vždy alespoň jedno z našich telefon
 
 Vaše dítě bude na táboře 14 dní neustále v kontaktu s přírodou. Doporučujeme tedy vhodný výběr a množství oblečení a výbavy. Níže je uveden seznam *povinné výbavy*, kterou musí Vaše dítě na tábor *bezpodmínečně mít*. Ostatní necháváme dle Vašeho uvážení, jelikož Vy znáte nejlépe potřeby Vašeho dítěte. Doporučené věci jsou však uvedeny z mnohaleté táborové zkušenosti.
 
-Věci zabalte *do nižšího* (cca 25 cm) kufru nebo do *krabice od banánů*, zde jsou přehledněji uloženy a vejdou se pod postel. Vřele doporučujeme zapojit do procesu balení *Vaše dítě*. Dítě má poté větší přehled, co vše s sebou (ne)veze v kufru. \
-*Všechna zavazadla, prosím, označte jménem dítěte. *
+Věci zabalte *do nižšího* (cca 25 cm) kufru nebo do *krabice od banánů*, zde jsou přehledněji uloženy a vejdou se pod postel. Vřele doporučujeme zapojit do procesu balení *Vaše dítě*. Dítě má poté větší přehled, co vše s sebou (ne)veze v kufru. *Všechna zavazadla, prosím, označte jménem dítěte. *
 
 *Nedávejte* dětem cenné předměty a větší obnosy peněz. Stan není vhodný pro uschování elektroniky. *Za případnou ztrátu neručíme!*.
 
