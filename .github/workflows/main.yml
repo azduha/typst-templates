@@ -14,5 +14,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /var/www/typst-templates
+          cd /data/apps/typst/templates
           git pull
