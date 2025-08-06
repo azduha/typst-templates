@@ -6,7 +6,7 @@
 )
 
 #recipe("Testovací recept", (
-  ("Cibule", 1, "ks", 10),
+  ("Cibule", 1, "kg", 10),
 ), [
   Nasekejte cibuli na drobné kousky a smažte na pánvi.
 

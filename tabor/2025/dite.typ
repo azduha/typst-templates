@@ -1,7 +1,7 @@
 #import "../../template.typ": *
 #import "./_data.typ": *
 
-#let data = json.decode(sys.inputs.at("data", default: "{}"))
+#let data = json(bytes(sys.inputs.at("data", default: "{}")))
 
 #show: duha.with(
   title:"Závazná přihláška dítěte",
@@ -185,7 +185,7 @@
       #v(0.3em)
       #par(text(size: 0.9em, [
         #super("1") Nehodící se škrtněte
-        #v(-0.4em)
+        #h(0.4em)
         #super("2") Bylo-li zjištěno, že posuzované dı́tě je zdravotně způsobilé s omezenı́m, uvede se omezenı́ podmiňujı́cı́ zdravotní způsobilost k účasti na letnı́m táboře, zotavovacı́ akci a škole v přı́rodě
       ]))
     ]

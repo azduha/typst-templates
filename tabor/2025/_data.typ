@@ -10,5 +10,6 @@
     "bydliste": "Luční 1151/8, Žďár nad Sázavou, 591 01",
     "rodne_cislo": "990124/5222"
   ),
-  "cena": "4 200 Kč pro členy Duhy AZ, 4 600 Kč pro nečleny Duhy AZ"
+  "cena": "4 200 Kč pro členy Duhy AZ, 4 600 Kč pro nečleny Duhy AZ",
+  "cenaCislo": "4 200 Kč"
 )

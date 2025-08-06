@@ -84,6 +84,29 @@
     } else {
       text(".", size: 0pt)
     }
+
+    let contentBox = box(
+      {
+        h((x - page.margin.left).length)
+        content
+      }
+    )
+    
+    if (type(content) != "content") {
+      contentBox = box(
+        par(
+          leading: 0.85em,
+          {
+            h((x - page.margin.left).length)
+            text(str(content), size: fillSize, fill: fillColor)
+          }
+        ),
+        width: (page.width - page.margin.left - page.margin.right) * to,
+        height: 1.45em * lines - (1.4em - 1em),
+        clip: true,
+        inset: (top: 0.2em),
+      )
+    }
     
     if (not newline) {
       box(
@@ -91,19 +114,7 @@
         {
           v(1em)
           box(
-            box(
-              par(
-                leading: 0.85em,
-                {
-                  h((x - page.margin.left).length)
-                  text(str(content), size: fillSize, fill: fillColor)
-                }
-              ),
-              width: (page.width - page.margin.left - page.margin.right) * to,
-              height: 1.45em * lines - (1.4em - 1em),
-              clip: true,
-              inset: (top: 0.2em),
-            ),
+            contentBox,
             inset: (top: -1em, left: -(x - page.margin.left).length),
             width: calc.max(((page.width - page.margin.left - page.margin.right) * to - (x - page.margin.left)).length.to-absolute(), 1em.to-absolute()),
             height: lineThickness,
@@ -275,4 +286,8 @@
 
 #let optional(object, value) = {
   object.at(value, default: "")
+}
+
+#let signature(path, offset: 0cm) = {
+  box(image(path, height: 2cm), inset: (top: -1.5cm + offset))
 }
