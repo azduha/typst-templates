@@ -64,9 +64,9 @@
   #heading("Organizátor akce")
   #field("Datum:", to: 40%, content: format-datetime(optional(data, "datum")))
   #field("Podpis:", content: {
-    signature("tabor/2025/razitko.png")
+    sign("tabor/2025/razitko.png")
     h(1em)
-    signature("tabor/2025/podpis.png")
+    sign("tabor/2025/podpis.png")
   })
 
   #v(3em)

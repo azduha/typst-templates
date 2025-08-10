@@ -155,7 +155,7 @@
     #v(3em)
 
     #field("Podpis dobrovolníka", to: 55%)
-    #field(", za Duhu AZ ", content: signature("tabor/2025/podpis.png"))
+    #field(", za Duhu AZ ", content: sign("tabor/2025/podpis.png"))
 
     #field("Dne", to: 40%, content: format-datetime(optional(data, "datum")))
     #field("v(e)", content: if optional(data, "jmeno").len() > 0 { "Žďáře nad Sázavou" })

@@ -288,6 +288,6 @@
   object.at(value, default: "")
 }
 
-#let signature(path, offset: 0cm) = {
+#let sign(path, offset: 0cm) = {
   box(image(path, height: 2cm), inset: (top: -1.5cm + offset))
 }
